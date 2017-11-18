@@ -1,11 +1,11 @@
 
 .page_wrapper {
 	width: 100%;
-	display: grid;
-	box-sizing: border-box;
-	grid-template-columns: 17% 83%;
+/*	display: grid;
+*/	box-sizing: border-box;
+	/*grid-template-columns: 17% 83%;
 	grid-template-areas: "....... header"
-	                     "sidebar content";
+	                     "sidebar content";*/
 	background-color: #fff;
 	color: #444;
 	padding-right: 1em;
@@ -13,13 +13,12 @@
 	grid-gap: 5px;
 	width: 100%;
 }
+
 /*
  * header
  *
  */
-
 .header {
-	grid-area: header;
 	display: grid;
 	grid-template-columns: 25% 75%;
 	grid-template-areas: "logo inner__header"
@@ -31,7 +30,7 @@
 }
 
 .logo {
-	grid-area; logo;
+	grid-area: logo;
 	float : left;
 	margin-top: 1.3em;
 	width: 100%;
@@ -47,55 +46,12 @@
 	margin-top: 1.3em;
 }
 
-/*
- * side bar
- */
-
-
-.sidebar {
-	grid-area: sidebar;
-}
-
-.box {
-	box-sizing: border-box;
-	width: 50%;
-	padding-top: 50%;
-	margin: auto;
-	border: 1px solid rgba(0, 0, 0, .2);
-}
-.siderbar__element {
-	box-sizing: border-box;
-	width: 100%;
-	text-align: center;
-}
-
-.blue {
-	background: #02b3e4;
-}
-
-.dark-grey {
-	background: #2d3c49;
-}
-
-.light-grey {
-	background: #7d97ad;
-}
-
-/*
- *  page content
- */
-.content {
-	grid-area: content;
-}
-
  /*
   * cover
   */
-
  .cover {
 	box-sizing: border-box;
 	display: block;
-	height: 100%;
 	width: 100%;
 	margin-bottom: 1.5em; 
 }
@@ -107,8 +63,8 @@
 	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction:row;
-	padding:5px;
+	flex-direction: row;
+	padding: 5px;
 	justify-content: space-between;
 }
 
@@ -120,27 +76,18 @@
 @media screen and (max-width:767px){
 	.feature_work_item {
 		width: 100%;
-		align-self: top;
 		text-align: center;
 	}
-	.feature_work_item_pic {
-		max-height : 160px;
-	}
 }
+
 @media screen and (min-width:768px){
 	.feature_work_item {
 		width: 30%;
-		align-self: top;
 		text-align: center;
 	}
-	.feature_work_item_pic {
-		height: 160px;
-	}
-
 }
 
 .featured_work_item_name {
-	font-style: bold;
 	text-transform: uppercase;
 	text-align: center;
 	padding-top: 10px;
@@ -150,7 +97,11 @@ img {
 	width: 100%;
 	box-sizing: border-box;
 }
-header, nav, footer, section, article, div {
+
+header,
+section,
+article,
+div {
   box-sizing: border-box;
 }
 
